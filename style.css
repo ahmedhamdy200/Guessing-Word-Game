@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+body {
+  background-color: #0f0e0e;
+  color: #fff;
+}
+
+.content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+
+h1 {
+  text-align: center;
+  color: #541212;
+  font-size: 3em;
+}
+
+#word {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px;
+}
+
+#guesses {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#num-guesses {
+  font-size: 2.2em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+#letters {
+  text-align: center;
+  margin: 20px;
+}
+
+.letter {
+  font-size: 2em;
+  font-weight: 700;
+  padding: 10px;
+  margin: 5px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.letter:hover {
+  background-color: #aaa;
+}
+
+#message {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  position: absolute;
+  top: 91%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#refresh-button {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #541212;
+  color: #0f0e0e;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+#refresh-button:hover {
+  background-color: #fff;
+}
+
+@media (max-width: 1094px) {
+  h1 {
+    font-size: 2em;
+  }
+  .content {
+    top: 45%;
+  }
+  .letter {
+    padding: 5px;
+  }
+  #letters {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #refresh-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .button-container {
+    top: 88%;
+  }
+}
+@media (max-width: 803px) {
+  .content {
+    top: 45%;
+  }
+  .letter {
+    padding: 5px;
+  }
+  #letters {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #refresh-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .button-container {
+    top: 88%;
+  }
+}
+
+@media (max-width: 723px) {
+  .content {
+    top: 45%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+
+  .letter {
+    padding: 5px;
+  }
+
+  #letters {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .button-container {
+    top: 88%;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.8em;
+  }
+}
